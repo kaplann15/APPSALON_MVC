@@ -1,10 +1,13 @@
 <?php
+
+namespace Classes;
+
 require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
 $router = new Router();
 
-namespace Classes;
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 
