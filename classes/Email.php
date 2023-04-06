@@ -45,7 +45,7 @@ class Email {
 
          $contenido = '<html>';
          $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+         $contenido .= "<p>Presiona aquí: <a href='https://seashell-app-vyama.ondigitalocean.app/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
