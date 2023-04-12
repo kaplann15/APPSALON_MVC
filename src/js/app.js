@@ -115,7 +115,7 @@ function paginaSiguiente() {
 async function consultarAPI() {
 
     try {
-        const url = 'http://localhost:3000/api/servicios';
+        const url = 'https://seashell-app-vyama.ondigitalocean.app/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);

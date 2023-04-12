@@ -16,7 +16,14 @@ class Router
     }
 
     public function comprobarRutas() {
-        $currentUrl = ($_SERVER['REQUEST_URI'] === '') ? '/' :  $_SERVER['REQUEST_URI'] ;
+
+// Obtener la URL actual 
+$currentUrl = $_SERVER['REQUEST_URI'];
+ // Analizar la URL para obtener los componentes 
+ $urlParts = parse_url($currentUrl);
+  // Quitar el parámetro 'date' si está presente 
+  if (isset($urlParts['query'])) {   $queryParts = array();   parse_str($urlParts['query'], $queryParts);   unset($queryParts['date']);   $urlParts['query'] = http_build_query($queryParts); } // Reconstruir la URL sin el parámetro 'date' 
+  $currentUrl = $urlParts['path'];
         $method = $_SERVER['REQUEST_METHOD'];
             
         //dividimos la URL actual cada vez que exista un '?' eso indica que se están pasando variables por la url
