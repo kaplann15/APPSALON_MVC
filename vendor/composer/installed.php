@@ -3,7 +3,7 @@
         'name' => 'juandelatorre/app-salon_php_mvc_js_sass',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f5a7a46640a6e77523e8d64b78570e0fccd28c46',
+        'reference' => '9603651aaf2fe5ebd60901416292fdde48cd226b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'juandelatorre/app-salon_php_mvc_js_sass' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f5a7a46640a6e77523e8d64b78570e0fccd28c46',
+            'reference' => '9603651aaf2fe5ebd60901416292fdde48cd226b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
